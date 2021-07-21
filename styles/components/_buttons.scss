@@ -1,0 +1,140 @@
+button{
+    cursor: pointer;
+    transition: filter .1s linear, transform .1s linear;
+    &:hover{
+        filter: brightness(1.05);
+    };
+    &:disabled{
+        opacity: .5;
+    };
+    &:active{
+        transform: scale(0.98);
+    }
+};
+
+@mixin fullButtonsStandardSettings{
+    border: none;
+    padding: 0 $m-padding;
+    min-width: $button-min-width;
+    height: $button-m-height;
+    color: #fff;
+    border-radius: $button-radius;
+}
+
+@mixin largeCalc{
+    height: calc(#{$button-m-height} * 1.25);
+    font-size: calc(#{$button-font-size} * 1.25);
+    border-radius: calc(#{$button-radius} * 1.25);
+    padding: 0 calc(#{$m-padding} * 1.25);
+};
+
+@mixin smallCalc{
+    height: calc(#{$button-m-height} * 0.75);
+    font-size: calc(#{$button-font-size} * 0.75);
+    border-radius: calc(#{$button-radius} * 0.75);
+    padding: 0 calc(#{$m-padding} * 0.75);
+};
+
+@mixin outlinedStyle($color){
+    background: none;
+    border: 1px solid $color;
+    color: $color;
+};
+
+@mixin textStyle($color){
+    background: none;
+    border: none;
+    color: $color;
+};
+
+.btn-large{
+    @include largeCalc();
+};
+
+.btn-small{
+    @include smallCalc();
+}
+
+.btn-primary{
+    background-color: $primary;
+    @include fullButtonsStandardSettings();
+    &-outlined{
+        @extend .btn-primary;
+        @include outlinedStyle($primary);
+    };
+    &-text{
+        @extend .btn-primary;
+        @include textStyle($primary);
+    };
+};
+
+.btn-secondary{
+    background-color: $secondary;
+    @include fullButtonsStandardSettings();
+    &-outlined{
+        @extend .btn-secondary;
+        @include outlinedStyle($secondary);
+    };
+    &-text{
+        @extend .btn-secondary;
+        @include textStyle($secondary);
+    };
+};
+
+.btn-alert{
+    background-color: $alert;
+    @include fullButtonsStandardSettings();
+    &-outlined{
+        @extend .btn-alert;
+        @include outlinedStyle($alert);
+    };
+    &-text{
+        @extend .btn-alert;
+        @include textStyle($alert);
+    };
+};
+
+.btn-success{
+    background-color: $success;
+    @include fullButtonsStandardSettings();
+    &-outlined{
+        @extend .btn-success;
+        @include outlinedStyle($success);
+    };
+    &-text{
+        @extend .btn-success;
+        @include textStyle($success);
+    };
+};
+
+.btn-ripple{
+    position: relative;
+    overflow: hidden;
+};
+
+.ripple{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translate(-50%,-50%);
+    animation: rippleEffect .4s ease-out;
+    animation-fill-mode: forwards;
+};
+
+@keyframes rippleEffect {
+    from {
+        width: 0px;
+        height: 0px;
+    }
+    to{
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+    }
+}
+
+
+
+

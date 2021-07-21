@@ -1,0 +1,59 @@
+.pad{
+    padding: $m-padding;
+    &-s{
+        @extend .pad;
+        padding: $s-padding;
+    };
+    &-l{
+        @extend .pad;
+        padding: $l-padding;
+    }
+};
+
+.pad-bottom{
+    padding-bottom: $m-padding;
+    &-s{
+        @extend .pad-bottom;
+        padding-bottom: $s-padding;
+    };
+    &-l{
+        @extend .pad-bottom;
+        padding-bottom: $l-padding;
+    }
+};
+
+.pad-top{
+    padding-top: $m-padding;
+    &-s{
+        @extend .pad-top;
+        padding-top: $s-padding;
+    };
+    &-l{
+        @extend .pad-top;
+        padding-top: $l-padding;
+    }
+};
+
+.pad-left{
+    padding-left: $m-padding;
+    &-s{
+        @extend .pad-left;
+        padding-left: $s-padding;
+    };
+    &-l{
+        @extend .pad-left;
+        padding-left: $l-padding;
+    }
+};
+
+.pad-right{
+    padding-right: $m-padding;
+    &-s{
+        @extend .pad-right;
+        padding: $s-padding;
+    };
+    &-l{
+        @extend .pad-right;
+        padding: $l-padding;
+    }
+}

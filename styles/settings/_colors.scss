@@ -1,0 +1,13 @@
+$primary: #1e88e5;
+$secondary: #5eb8ff;
+$alert: #d50000;
+$success: #64dd17;
+
+@mixin backgroundColor($color){
+    @debug $color;
+    @if $color == primary{
+        background-color: $primary;
+    } @else if $color == secondary{
+        background-color: $secondary;
+    };
+};

@@ -1,0 +1,16 @@
+$percentage: 1%;
+
+@for $i from 1 through 100{
+    .container-#{$i}{
+        width: $percentage * $i;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+    };
+};
+
+@for $i from 1 through 12{
+    .col-#{$i}{
+        grid-column: span #{$i};
+    };
+}

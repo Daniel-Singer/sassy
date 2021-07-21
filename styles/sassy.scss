@@ -1,0 +1,21 @@
+@import './settings/colors';
+@import './settings/fonts';
+@import './settings/units';
+@import './components/buttons';
+@import './resets/resets';
+@import './resets/typography';
+@import './components/container';
+@import './resets/padding';
+@import './components/nav';
+@import './resets/margins';
+@import './resets/elevate';
+
+body{
+    width: 100vw;
+    height: 100vh;
+};
+
+html{
+    font-size: 16px;
+    letter-spacing: 0.15px;
+};

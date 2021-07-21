@@ -1,0 +1,17 @@
+.elevate{
+    box-shadow: 2px 5px 5px rgba(0,0,0,.2);
+    transition: box-shadow .1s linear;
+    &:active{
+        box-shadow: none;
+    };
+    &-on-hover{
+        @extend .elevate;
+        box-shadow: none;
+        &:hover{
+            box-shadow: 2px 5px 5px rgba(0,0,0,.2)
+        };
+        &:active{
+            box-shadow: none;
+        }
+    };
+};

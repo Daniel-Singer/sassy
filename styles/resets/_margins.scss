@@ -1,0 +1,59 @@
+.mg{
+    padding: $m-padding;
+    &-s{
+        @extend .mg;
+        padding: $s-padding;
+    };
+    &-l{
+        @extend .mg;
+        padding: $l-padding;
+    }
+};
+
+.mg-bottom{
+    padding-bottom: $m-padding;
+    &-s{
+        @extend .mg-bottom;
+        padding-bottom: $s-padding;
+    };
+    &-l{
+        @extend .mg-bottom;
+        padding-bottom: $l-padding;
+    }
+};
+
+.mg-top{
+    padding-top: $m-padding;
+    &-s{
+        @extend .mg-top;
+        padding-top: $s-padding;
+    };
+    &-l{
+        @extend .mg-top;
+        padding-top: $l-padding;
+    }
+};
+
+.mg-left{
+    padding-left: $m-padding;
+    &-s{
+        @extend .mg-left;
+        padding-left: $s-padding;
+    };
+    &-l{
+        @extend .mg-left;
+        padding-left: $l-padding;
+    }
+};
+
+.mg-right{
+    padding-right: $m-padding;
+    &-s{
+        @extend .mg-right;
+        padding: $s-padding;
+    };
+    &-l{
+        @extend .mg-right;
+        padding: $l-padding;
+    }
+};
