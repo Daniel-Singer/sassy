@@ -1,0 +1,27 @@
+.bg{
+    background-color: #fff;
+    &-light{
+        @extend .bg;
+        background-color: $light-grey;
+    };
+    &-dark{
+        @extend .bg;
+        background-color: $dark-grey;
+    };
+    &-primary{
+        @extend .bg;
+        background-color: $primary;
+    };
+    &-secondary{
+        @extend .bg;
+        background-color: $secondary;
+    };
+    &-success{
+        @extend .bg;
+        background-color: $success;
+    };
+    &-alert{
+        @extend .bg;
+        background-color: $alert;
+    };
+}

@@ -3,6 +3,11 @@ $secondary: #5eb8ff;
 $alert: #d50000;
 $success: #64dd17;
 
+$primary-transparent: #1e88e531;
+
+$light-grey: rgb(203, 203, 203);
+$dark-grey: rgb(70, 70, 70);
+
 @mixin backgroundColor($color){
     @debug $color;
     @if $color == primary{

@@ -5,6 +5,7 @@ $percentage: 1%;
         width: $percentage * $i;
         margin: 0 auto;
         display: grid;
+        align-items: center;
         grid-template-columns: repeat(12,1fr);
     };
 };

@@ -1,0 +1,25 @@
+.tab{
+  height: $standard-element-height;
+  min-width: $tab-min-width;
+  max-width: $tab-max-width;
+  padding: 0 $m-padding;
+  text-transform: uppercase;
+  @include flex(center,center);
+  transition: background-color .1s linear, color .1s linear;
+  cursor: default;
+};
+
+.tab.active{
+  background-color: $primary-transparent;
+  color: $primary;
+  position: relative;
+  &::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: $primary;
+  }
+}
