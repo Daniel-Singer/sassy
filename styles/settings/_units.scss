@@ -12,11 +12,18 @@ $l-padding: 1.5rem;
 $m-padding: 1em;
 $s-padding: .5em;
 
+$focused-label-size: 12px;
+
 $button-min-width: 4em;
 $button-m-height: 2.25em;
 $button-radius: 0.18em;
 $button-font-size: 0.875em;
 
 $standard-element-height: 3rem;
+
 $tab-min-width: 5.6rem;
 $tab-max-width: 22.5rem;
+
+$input-min-width: $tab-min-width;
+$input-max-width: $tab-max-width;
+$input-height: 1.25rem;

@@ -7,6 +7,10 @@
   @include flex(center,center);
   transition: background-color .1s linear, color .1s linear;
   cursor: pointer;
+  &::after{
+    background-color: none;
+    transition: background-color .1s linear;
+  }
 };
 
 .tab.active{
